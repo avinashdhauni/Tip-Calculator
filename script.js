@@ -33,10 +33,10 @@ numberOfPeople.addEventListener("input", totalAmt);
 function totalAmt(){
     people = Number(numberOfPeople.value);
 
-    if(numberOfPeople.value === ""){
+    if(people === "" || people === 0){
         people = 1;
     }
-    let total = (Number(billInput.value) + tipValue)/people
+    let total = (Number(billInput.value) + tipValue)/people;
     totalAmount.innerHTML = "$" +total;
 }
 
