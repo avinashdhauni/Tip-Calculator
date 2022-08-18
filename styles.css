@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+body{
+    background-color: hsl(185, 41%, 84%);
+    font-family: 'Space Mono', monospace;
+    font-size: 18px;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+/*******main container**********/
+.container{
+    width:60%;
+    padding:30px;
+    background-color: #fff;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+/*************amount and tip calculator column***********/
+.secondColumn{
+    display:flex;
+    flex-direction: column;
+    background-color: hsl(183, 100%, 15%);
+    width:45%;
+    padding:30px;
+    border-radius: 15px;
+    color:#fff;
+}
+
+/*********Bill input column************/
+.firstColumn{
+    width:45%;
+}
+/*********tip and total section divs***********/
+
+.tipSection, .totalSection{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+/***gap between /person text ***********/
+
+.totalSection p, .tipSection p{
+    margin:0;
+    padding:0;
+}
+
+/*********second column amount************/
+.totalAmount, .totalTip{
+    font-size:35px;
+    font-weight: 700;
+    color: hsl(172, 67%, 45%);
+}
+
+/*******Reset Button Style************/ 
+.resetButton{
+    margin-top:100px;
+}
+.btn{
+    width:100%;
+    background-color: hsl(172, 67%, 45%);
+    border:none;
+    color:hsl(183, 100%, 15%);
+    font-weight: 600;
+    text-transform: uppercase;
+    padding:10px;
+}
+.btn:hover, .tip:hover{
+    background-color: hsl(172, 67%, 45%);
+    color:hsl(183, 100%, 15%);
+    cursor: pointer;
+}
+
+/********tip tiles********/
+.tip-tiles{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.tip{
+    text-align: center;
+    background-color: hsl(183, 100%, 15%);
+    margin:5px;
+    color: hsl(185, 41%, 84%);
+    padding:10px;
+    font-weight: 600;
+    border-radius: 3px;
+}
+.customTip{
+    text-align: center;
+    background-color: hsl(189, 41%, 97%);
+    margin:5px;
+    color: hsl(183, 100%, 15%);
+    padding:10px;
+    font-weight: 700;
+    border-radius: 3px;
+}
+
+/**********gap between section in first columns*******/
+.sectionGap{
+    position: relative;
+    margin-bottom: 30px;    
+}
+
+/********number input type designs***********/
+.custom{
+    padding:0!important;
+}
+.form-control{
+    background-color: hsl(189, 41%, 97%);
+    border: none;
+    text-align: right;
+    color: hsl(183, 100%, 15%); 
+    font-weight: 700;
+    padding:10px;
+}
+.form-control:focus {
+    box-shadow: none;
+    background-color: hsl(189, 41%, 97%);
+}
+
+.icon{
+    position:absolute;
+    bottom:0;
+    left:0px;
+    padding:15px;
+    color:hsl(184, 14%, 56%);
+}
