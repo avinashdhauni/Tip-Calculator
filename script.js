@@ -1,4 +1,4 @@
-const billInput = document.querySelector("#billInput");
+const billInput = document.querySelector("#bill-input");
 const tip = document.querySelectorAll(".tip");
 const totalTip = document.getElementById("totalTip");
 const custom = document.getElementById("custom");
